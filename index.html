@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<title>Belajar Vue</title>
+		<script src="vue.js"> </script>
+	</head>
+	<body>
+		<div id="app">
+			<h1 v-html="message"></h1>
+		</div>
+			<script type="text/javascript">
+					// var vm = new Vue({
+					// 		el: '#app',
+					// 		data: {
+					// 		  name: 'Farham', // string
+					// 		  age: 33, // integer
+					// 		  gender: true, // boolean (Pria)
+					// 		  hobby: ['coding','sleeping'], // array
+					// 		  children: {
+					// 			      1: 'Ammar',
+					// 			      2: 'Faqih',
+					// 			      3: 'Syamil'
+					// 			}
+					// 		},
+					// 	    beforeCreate () {
+					// 			console.log('before create: '+ 'nama = ' + this.name) 
+					// 		},
+					// 		created () { 
+					// 			console.log('created: '+ 'nama = ' + this.name) 
+					// 			console.log(this.$data)
+					// 		},
+					// 		beforeMount() { 
+					// 			console.log('before mount: '+ 'el = ' + this.$el.textContent)
+					// 		},
+					// 		mounted() { 
+					// 			console.log('after mount: '+ 'el = ' + this.$el.textContent)
+					// 		},
+					// 		beforeUpdate() { 
+					// 			console.log('before update: '+ 'el = ' + this.$el.textContent)
+					// 		},
+					// 		updated() {
+					// 			console.log('update: '+ 'el = ' + this.$el.textContent) 
+					// 		},
+					// 		beforeDestroy () { 
+					// 			console.log('before destroy')
+					// 	    },
+					// 	    destroyed () {
+					// 			console.log('destroyed') 
+					// 		},
+					// 	});
+					// vm.$watch('name', function (newValue, oldValue) { 
+					// 	console.log('Var name diubah dari '+oldValue+' menjadi '+newValue) 
+					// })
+					// vm.name = 'Hamizan!'
+
+					// vm.$destroy()
+
+					// Pelajaran ke 2
+					var vm = new Vue({
+						    el: '#app',
+						    data: {
+						        message: "<span style='color:red'>Hello World!</a>",
+								}, 
+							})
+			</script>
+	</body>
+</html>
